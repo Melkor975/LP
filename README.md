@@ -1,2 +1,2 @@
 # LP
-Llenguatges de Programacó-FIB
+Llenguatges de Programacó-FIB Curs 2017/18
