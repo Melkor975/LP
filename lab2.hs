@@ -32,7 +32,7 @@ myLength l = foldl (\x loquesea -> x+1) 0 l
 myReverse :: [Int] -> [Int]
 myReverse l = foldl (flip (:)) [] l
 --Feu una funció countIn :: [[Int]] -> Int -> [Int] que, donada una llista de llistes d’elements ℓ i un element x ens torna la llista que indica quants cops apareix x en cada llista de ℓ.
-countIn :: [[Int]] -> Int -> [Int]
+countIn :: [[Int]] -> Int -> [Int] 
 countIn ll x = map (length . (filter (== x))) ll
 --Feu una funció firstWord :: String -> String que, donat un string amb blancs i caràcacters alfabètics), en retorna la primera paraula.
 firstWord :: String -> String
