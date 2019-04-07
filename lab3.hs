@@ -91,4 +91,4 @@ instance Eq a => Eq (Queue a) where
 		|otherwise = if (top q1) == (top q2)
 				then ((pop q1) == (pop q2))
 			    else False
-
+ 
