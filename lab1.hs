@@ -32,7 +32,7 @@ quickFib n = fst (fib n)
 fib :: Int -> (Int, Int)
 fib 0 = (0, 0)
 fib 1 = (1, 0)
-fib n = (a+b, a)
+fib n = (a+b, a) 
 	where (a, b) = fib (n-1)
 
 --LLISTES
