@@ -30,7 +30,7 @@ date:
 # Paradigma de programació
 
 - **SmallTalk**: Orientat a Objectes pur, Reflexiu.
-\newline
+\newline 
 - **c++**
     - *typedef*
     - *struct*
