@@ -1,0 +1,60 @@
+PRESENTACIO SMALLTALK:
+
+- Introduccio
+
+    -Smalltalk es un projecte que va neixer a linstitut  Xeroc Parc, als anys 70,
+     la primera versio la va desenvolupar Alan Kay Smalltalk-71, i en un principi es va pensar per tenir un fi educatiu.
+
+     Primer-> Smalltalk-71, nomes creat per Kay, amb la idea d'un sistema' basat en el pas de missatges, inspirat per Simula.
+
+     Dan Ingalis, Adele Goldberg, Ted Kaehler, Scott Wallace etc.
+
+    -Difos per primer cop com a SmallTalk-80(tot es un objecte), pero es un llenguatge actiu, en desenvolupament continu
+     amb comunitats fidels, ANSI Smalltalk es la versio standard actual
+
+    -Medalla Stack OverFlow
+
+- Paradigma de programacio
+  SmallTalk es un dels pocs programes que son pura i completament orientats a objectes, tot el que hi ha es un objecte (excepte private instance variables),
+   inclus un programa. No hi han primitives.
+
+   En canvi veiem que tant a c++ com a java si que hi han.
+
+- Altres Caracteristiques
+  SmallTalk es un llenguatge INTERPRETAT, ja que no es compila el programa abans d'executar-lo, sino que es tradueix a llenguatge maquina a mesura que s'executa el programa
+
+  Sistema de tipus:
+    Dinamicament tipat-> la comprovacio de tipacio es du a terme en temps d'execucio, es a dir que si declarem a = 2, aquest 2 podria ser tant un int com un double, la questio es que
+    si despres cridem a una funcio que espera un double amb a com a parametre, el programa considerara que a ho es.
+
+    Fortament tipat-> No es permeten violacions dels tipus de dades, si sha definit a com a int, no pot ser un double despres?
+
+- Disseny
+  Va ser dissenyat desde el primer moment pensant en que seria un llenguatge OO
+
+  Tots els programes es basen en l'enviament' de missatges entre Objectes.
+
+  Un objecte de smalltalk consisteix en un tros de memoria privat i un set d'operacions'. El tipus d'operacio' depen del component que representa l'objecte'.
+  si representa un numero, computara funcions aritmetiques. Si representa una estructura de dades, emmagatzema i recupera informacio.
+
+- Orientacio a Objectes a SmallTalk
+  Un Objecte a SmallTalk pot fer exactament 3 coses:
+    -Mantenir l'estat:
+    El estado que posee un objeto siempre es privado para ese objeto. Otros objetos pueden consultar o cambiar ese estado solo enviando solicitudes (mensajes) al objeto para hacerlo.
+    Cualquier mensaje puede enviarse a cualquier objeto: cuando se recibe un mensaje, el receptor determina si ese mensaje es apropiado.
+    Alan Kay comentó que a pesar de la atención que se presta a los objetos, el mensaje es el concepto más importante en Smalltalk: "La gran idea es 'enviar mensajes' -> núcleo de Smalltalk
+  Rebre
+
+  Enviar
+
+-Els missatges entre Objectes a SMALLTALK
+
+  Una sollicitusd d'un objecte a un altre, per dur a terme una de les seves operacions.
+  Unica manera d'invocar l'operacio d'un objecte.
+
+  QUina operacio es vol executar, pero el com ho decideix l'objecte receptor. Por portar un objecte com a parametre
+
+  Set de missatges als quals pot respondre un Objecte, es l'unica manera d'interactuar amb ell.
+  Una de les caracteristiques primordials d'un objecte a smallTalk es que la seva memoria privada nomes es pot manipular amb les seves propies operacions.
+
+  Aixo fa que l'implementacio d'un objecte i els seus missatges no depenguin de detalls interns d'altres objectes.Nomes dels que ell respon.
