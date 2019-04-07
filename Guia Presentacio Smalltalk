@@ -51,7 +51,7 @@ PRESENTACIO SMALLTALK:
 
   Una sollicitusd d'un objecte a un altre, per dur a terme una de les seves operacions.
   Unica manera d'invocar l'operacio d'un objecte.
-
+ 
   QUina operacio es vol executar, pero el com ho decideix l'objecte receptor. Por portar un objecte com a parametre
 
   Set de missatges als quals pot respondre un Objecte, es l'unica manera d'interactuar amb ell.
