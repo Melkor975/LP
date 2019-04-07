@@ -217,7 +217,7 @@ void lfilter(string comparador, string operant, AST *x, vector<string> &ls) {
 			}
 			else ls.push_back(lx[i]);
 		}
-	}
+	} 
 	else if(comparador == "<") {
 		int current;
 		for(int i = 0; i < lx.size(); i++){
