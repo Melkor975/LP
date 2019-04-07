@@ -9,7 +9,7 @@ eval1 (Val a) = a
 eval1 (Add e1 e2) = (eval1 e1) + (eval1 e2)
 eval1 (Sub e1 e2) = (eval1 e1) - (eval1 e2)
 eval1 (Mul e1 e2) = (eval1 e1) * (eval1 e2)
-eval1 (Div e1 e2) = div (eval1 e1) (eval1 e2)
+eval1 (Div e1 e2) = div (eval1 e1) (eval1 e2) 
 
 --2. Avaluació amb indicació d’error (30 punts)
 
